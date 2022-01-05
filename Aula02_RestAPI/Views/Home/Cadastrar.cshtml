@@ -1,0 +1,18 @@
+﻿@model Aula02_RestAPI.Models.Pessoa
+
+
+@using(Html.BeginForm("Cadastrar","Home", FormMethod.Post))
+{
+    Nome:
+    
+    <br/>
+
+    @Html.TextBoxFor(p => p.nome)
+
+    <br/>
+
+    <input type="submit" value="Cadastrar" />
+
+
+
+}

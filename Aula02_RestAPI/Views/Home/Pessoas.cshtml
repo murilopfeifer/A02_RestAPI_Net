@@ -1,0 +1,7 @@
+﻿@model List<Aula02_RestAPI.Models.Pessoa>
+
+@foreach (var pessoa in @Model){
+    <strong>
+    <a href="/Home/PessoaId/@pessoa.Id">@pessoa.nome</a>
+    </strong>
+}

@@ -1,0 +1,13 @@
+﻿@model Aula02_RestAPI.Models.Pessoa
+
+@using (Html.BeginForm("Excluir", "Home", FormMethod.Post))
+{
+Id:
+
+    <br />
+    <h3>Id</h3>
+    @Html.TextBoxFor(p => p.Id)
+    <br />
+
+    <input type="submit" value="Excluir" />
+}

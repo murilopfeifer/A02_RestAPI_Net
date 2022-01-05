@@ -1,0 +1,22 @@
+﻿@model Aula02_RestAPI.Models.Pessoa
+
+@using (Html.BeginForm("Alterar", "Home", FormMethod.Post))
+{
+Id:
+
+    <br />
+    <h3>Id</h3>
+    @Html.TextBoxFor(p => p.Id)
+
+<br />
+<br />
+
+Nome:
+    <br />
+    <h3>Nome</h3>
+    @Html.TextBoxFor(p => p.nome)
+    <input type="submit" value="Alterar" />
+
+
+
+}
